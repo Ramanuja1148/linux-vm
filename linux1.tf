@@ -86,7 +86,7 @@ resource "azurerm_linux_virtual_machine" "rg" {
     ]
     admin_ssh_key {
         username   = "azureuser"
-        public_key = file("C:/Users/raman/.ssh/id_rsa.pub")
+        public_key = file("~/.ssh/id_rsa.pub")
     }
     os_disk {
         caching              = "ReadWrite"
